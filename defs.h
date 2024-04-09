@@ -5,26 +5,21 @@
 typedef enum {
     WHITE,
     BLACK,
+    NONE,
 } piece_color;
 
 // piece
 typedef enum {
-    PARWN,
+    PAWN,
     NIGHT,
-    BISHO,
+    BISHOP,
     ROOK,
     QUEEN,
     KING,
 } piece_name;
 
-// is there any piece?
-typedef enum {
-    NONE,
-    SOME,
-} piece_existence;
 
 typedef struct {
-    piece_existence existence;
     piece_color color;
     piece_name name;
 } square_state;
